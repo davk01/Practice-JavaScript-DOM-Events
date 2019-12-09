@@ -50,17 +50,25 @@
 // let a = document.querySelector('div#onhover a')
 // console.log(a)
 
-let h1 = document.querySelector('h1')
-let input = document.querySelector('input')
-let button = document.querySelector('button')
+// let h1 = document.querySelector('h1')
+// let input = document.querySelector('input')
+// let button = document.querySelector('button')
 
-h1.addEventListener('mouseenter', function(){
-    this.style.color = 'red'
-})
-h1.addEventListener('mouseleave', function(){
-    this.style.color = 'black'
-})
-function cli(){
-   h1.textContent = input.value
+// h1.addEventListener('mouseenter', function(){
+//     this.style.color = 'red'
+// })
+// h1.addEventListener('mouseleave', function(){
+//     this.style.color = 'black'
+// })
+// function cli(){
+//    h1.textContent = input.value
+// }
+// button.addEventListener('click',cli)
+
+let devs = document.querySelectorAll('div')
+
+for(var i=0; i<devs.length; i++){
+    devs[i].addEventListener('click', function(){
+        console.log(this.getAttribute('id'))
+    },true)
 }
-button.addEventListener('click',cli)

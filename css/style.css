@@ -19,14 +19,7 @@ div {
 	border: 1px solid red;
 }  */
 
-.lamp {
-	width: 250px;
-	height: 300px;
-	/* border: 1px solid red; */
-}
-.lamp img {
-	width: inherit;
-}
+
 /*#a{
 	margin:0;
 	width:50%;
@@ -41,3 +34,19 @@ div {
 	background-color:black;
 	position: absolute;
 }*/
+#box1 {
+	width: 400px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: blueviolet;
+}
+#box2 {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(58, 14, 99);
+}
