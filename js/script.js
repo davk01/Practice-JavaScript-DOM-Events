@@ -65,11 +65,17 @@
 // }
 // button.addEventListener('click',cli)
 
-let devs = document.querySelectorAll('div')
-
+var devs = document.querySelectorAll('div')
+var link = document.querySelector('a')
 for(var i=0; i<devs.length; i++){
     devs[i].addEventListener('click', function(event){
         event.stopPropagation()
         console.log(this.getAttribute('id'))
     })
+}
+link.addEventListener('click', hendelLinkClick)
+function hendelLinkClick(event){
+    event.preventDefault()
+    var div = devs[0];
+    div.style.display =  div.style.display  === 'none' ? 'flex' : 'none'
 }
