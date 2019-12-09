@@ -68,7 +68,8 @@
 let devs = document.querySelectorAll('div')
 
 for(var i=0; i<devs.length; i++){
-    devs[i].addEventListener('click', function(){
+    devs[i].addEventListener('click', function(event){
+        event.stopPropagation()
         console.log(this.getAttribute('id'))
-    },true)
+    })
 }
